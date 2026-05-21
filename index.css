@@ -1,0 +1,474 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Play:wght@400;700&display=swap');
+@import '@fontsource/metropolis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: keep-all;
+}
+
+.container {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* header-start */
+header {
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+/* logo-start */
+header h1 a {
+    display: flex;
+}
+
+h1 img {
+    width: 80px;
+    height: auto;
+}
+/* logo-end */
+
+/* menu-start */
+header nav {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+header nav > span {
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+/* menu-end */
+
+/* lang-start */
+header .container > div button {
+    background: none;
+    color: white;
+    padding: 4px;
+    border-bottom: 2px solid white;
+}
+
+header .container > div {
+    display: flex;
+    gap: 12px;
+}
+/* lang-end */
+/* header-end */
+
+
+/* main-start */
+main {
+    width: 100%;     
+    height: 100vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+main video:nth-child(1) {
+    width: 100%;
+    height: 100%;      
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+main video:nth-child(2) {
+    display: none;
+    width: 100%;
+    height: 100%;      
+    object-fit: cover; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+}
+
+main button {
+    position: absolute;
+    padding: 16px 26px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+/* main-end */
+
+
+/* aside-start */
+aside {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -30px;
+    z-index: 999;
+}
+
+aside img {
+    display: block;
+}
+/* aside-end */
+
+
+/* article-start */
+.visual {
+    width: 100%;
+    height: 800px;
+    background: url(https://www.posco.co.kr/docs/kor7/jsp/resources/images/main/main_carbon_02.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 50px;
+}
+
+.visual .container {
+    height: auto;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+}
+
+.visual p {
+    margin: 32px 0 40px;
+    font-size: 12px;
+}
+
+.visual h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.visual h2 span {
+    font-weight: 600;
+}
+
+.visual .hypex {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.intro {
+    display: none;
+}
+
+
+/* footer-start */
+footer {
+    background: #f4f4f4;
+}
+
+.footer-logo {
+    margin: 40px 0;
+}
+
+h3,
+.company li {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.support li,
+.company li {
+    margin: 12px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.full-box {
+    width: 90%;
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    display: flex;
+    gap: 40px;
+}
+
+.footer-social {
+    color: #333;
+    margin-top: 32px;
+}
+
+.footer-social li {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-social ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.footer-column ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer-social img {
+    width: 60px;
+    display: block;
+}
+
+.footer-social li:nth-child(1) {
+    padding: 12px 24px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    border: 1px solid #333;
+}
+
+.footer-social li:nth-child(2),
+.footer-social li:nth-child(3),
+.footer-social li:nth-child(4),
+.footer-social li:nth-child(5) {
+    border: 1px solid #333;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.footer-social button {
+    font-size: 16px;
+    width: 100%;
+    border: 1px solid black;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.footer-social button i {
+    font-size: 24px;
+}
+
+.WA {
+    width: 120px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.sns-button {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+    align-items: center;
+}
+
+/* bottom-footer-start */
+.bottom-box {
+    padding: 56px 0;
+    width: 100%;
+    background: #333;
+}
+
+.bottom-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    font-weight: 400;
+}
+
+.bottom-box a {
+    color: #888;
+}
+
+.bottom-box ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.bottom-box span {
+    font-weight: 600;
+    color: #eee;
+}
+/* footer-end */
+
+/* address */
+address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 2rem;
+    background: #333;
+    color: #888;
+    padding-bottom: 100px;
+}
+
+@media screen and (min-width: 1024px) {
+    main video:nth-child(1) {
+        display: none;
+    }
+
+    main video:nth-child(2) {
+        display: block;
+    }
+
+    main button {
+        left: 85%;
+    }
+
+    article {
+        display: flex;
+    }
+
+    .visual {
+        width: 50%;
+    }
+
+    .visual .container {
+        display: none;
+    }
+
+    .intro {
+        width: 50%;
+        height: 800px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        padding: 0 100px;
+    }
+
+    .intro p {
+        margin: 46px 0;
+    }
+
+    .intro p span,
+    .intro h2 span,
+    .intro h2 > span {
+        font-weight: 600;
+        color: #333;
+    }
+
+    .intro h2 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+
+    .intro button {
+        background: none;
+        padding: 12px 0;
+        border-bottom: 1px solid #666;
+        color: #333;
+        width: 60%;
+        font-size: 16px;
+        font-weight: 900;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+
+    .intro button i {
+        font-size: 24px;
+        color: #333;
+    }
+
+    .footer-logo {
+        margin: 0;
+        width: auto;
+        height: 24px;
+    }
+
+    .footer-social {
+        display: flex;
+    }
+
+    .left-box .container {
+        width: 100%;
+        margin: 24px 0;
+        display: flex;
+        gap: 40px;
+    }
+
+    .right-box {
+        width: 100%;
+        display: flex;
+        margin: 24px 0;
+    }
+
+    .full-box {
+        max-width: 1366px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-social {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer-social ul {
+        gap: 10px;
+        display: flex;
+        width: 50%;
+    }
+
+    .footer-social button {
+        margin: 0;
+        width: 50%;
+    }
+
+    .right-box {
+        display: flex;
+        justify-content: right;
+    }
+
+    .right-box .container {
+        position: relative;
+        margin: 0;
+    }
+
+    .WA {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        left: auto;
+        margin: 0;
+    }
+
+    
+}
